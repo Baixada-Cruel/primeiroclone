@@ -1,0 +1,126 @@
+:root {
+  --bg-color: hsl(233, 47%, 7%);
+  --bg-card: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --text: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+html,
+body {
+  background-color: var(--bg-color);
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.box {
+  display: flex;
+  width: 60vw;
+  height: 50vh;
+  border-radius: 15px;
+}
+.left {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-card);
+  border-radius: 15px 0px 0px 15px;
+}
+.right {
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 15px 15px 0px;
+  background: linear-gradient(rgba(190, 92, 255, 0.1), rgba(190, 92, 255, 0.5)),
+    url(/src/img/image-header-desktop.jpg);
+}
+span {
+  color: var(--soft-violet);
+}
+.titulo {
+  width: 80%;
+  font-size: 1.8rem;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.subtitulo {
+  font-family: 'Inter', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 80%;
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 14px;
+}
+h1 {
+  width: 80%;
+  font-size: 1.8rem;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+.boxx {
+  width: auto;
+  height: auto;
+}
+.box-titulo {
+  font-family: 'Inter', sans-serif;
+  margin: 0px;
+}
+.box-text {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.footerbox {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+@media (max-width: 375px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    height: 30%;
+    width: 100%;
+    border-radius: 0px 15px 15px 0px;
+    background: linear-gradient(
+        rgba(190, 92, 255, 0.1),
+        rgba(190, 92, 255, 0.5)
+      ),
+      url(/src/img/image-header-desktop.jpg);
+    background-size: cover;
+  }
+  .right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-card);
+    border-radius: 15px 0px 0px 15px;
+  }
+}
